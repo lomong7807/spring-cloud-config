@@ -1,7 +1,7 @@
 # ecommerce.yml
 
 token:
-  expiration_time: 33333333
+  expiration_time: 22222222
 #  secret: 7ZvFBKXIlk4jrLjN9K4H2UY7lQJnD1EYUPzfwbG/6h90fPd+Y64SQCfCNDv9eHbfomBzLmPfFfzK+0w0pLOxWA==
   secret: Gs0pGmm9NJJfGkKxqzoxXDr3E4Pp9P3qGaHRrfwFO65MoSbVmwNE99UhB8hUE8VVQX1USwV7dJHogcH6CK1VKw==
 
