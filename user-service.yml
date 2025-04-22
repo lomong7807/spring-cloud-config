@@ -22,6 +22,3 @@ order-service:
     url: http://ORDER-SERVICE/order-service/%s/orders
     exception:
         orders_is_empty: User's orders is empty.
-        
-        Gs0pGmm9NJJfGkKxqzoxXDr3E4Pp9P3qGaHRrfwFO65MoSbVmwNE99UhB8hUE8VVQX1USwV7dJHogcH6CK1VKw==
-        Gs0pGmm9NJJfGkKxqzoxXDr3E4Pp9P3qGaHRrfwFO65MoSbVmwNE99UhB8hUE8VVQX1USwV7dJHogcH6CK1VKw=
