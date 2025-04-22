@@ -1,0 +1,24 @@
+# ecommerce.yml
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    # '{cipher}': 이 텍스트는 암호화된 텍스트라는 것을 알려줌
+    password: '{cipher}AQBjI4l2AnqIBwSjFhVBqlxyLu5sMx72NQNLe3EQYCUxxvki/TLN7QL1erJDropfP8lPZCx1f9VqTvnpo2YmsFJrEEhjW1m/FffE2hhWjBPnffxf2SLeYshtaDgvtqZ4qyEjL/MkNAmtHw7faaVlh/Gdegzucq9L7mJAKsMGcLPRy67IWkDjrn3OARVwIJwzQ2eNrQSFmJjvIq+ELqIqq6D9mh0zfaB3CD/yhhQSLCOmeFkmPRcFqk09hQNDLLjq1JyEyxzi5cVOqSYntf8Vj4tMXGm3vCy//Gg4Cm2+YiWof84fpMYMAn9pe/1S1Xe8YZ+xUV9S0KlY8y67NFBScYUcJZk++PMGcnsK8jSWHNrBEMuL4pAAP2PKWK70BbahbhI='
+    driver-class-name: org.h2.Driver
+
+token:
+  expiration_time: 86400000
+#  secret: 7ZvFBKXIlk4jrLjN9K4H2UY7lQJnD1EYUPzfwbG/6h90fPd+Y64SQCfCNDv9eHbfomBzLmPfFfzK+0w0pLOxWA==
+  secret: '{cipher}AQDlVmd+UsKatOaRDJSmrTdBPLIXqPmw0guxyZaZwaFyC5QSDVZPmyNoWTzDvqA7/Jy1s8hx00eLt8MYNMj7Ip8hAK5uvTHhXpy1KpFmTvR6SUf44FBcVGVurh4HG2M6aPefmz3mtVafq33flXEnVFQMWfIm1BHS5MJzEiYMBdP2Ay6vZH8rB12BwECoiVvG6mD/OcbLAgJBBtArc97dkCIlf/73ovdXRXAKDdwOFtqJtRVtjaDdeodI+DQ6nO6UdHoMY3qRxvEk5A2J78IkMKWU3LWMaZCb7pfdhffiYHbuacaEQlRltmD4pbT1raKCnNU2aSUM5sLiQZYoMFj/4gcavovAg1hQ97ILEPG9i5JUZ/ltypCmf8PcFUFJ6niWhBgi+/J1w2LYDJAesp1leHylSHokrQoSCBwML5c+PLviqWgBjDq4QxagAIsLANyfAu1hPkIbKKxUyKpQ8bkgIAifzBCFbT4WoZB342fbOmll8w=='
+
+
+
+gateway:
+#  ip: 192.168.0.6
+    ip: 172.18.0.5
+  
+order-service:
+    url: http://ORDER-SERVICE/order-service/%s/orders
+    exception:
+        orders_is_empty: User's orders is empty.
